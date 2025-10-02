@@ -1,2 +1,2 @@
 # Yantra-Clone
-Yantra Restaurant website built with HTML and CSS
+Restaurant website designed with HTML and CSS
