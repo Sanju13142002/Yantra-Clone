@@ -1,0 +1,177 @@
+* {
+padding: 0%;
+margin: 0%;
+border: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+#herosection {
+background-image: url("yantraHeroimage.avif");
+background-size: auto;
+height: 70rem;
+}
+
+#navBar {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap: 20px;
+color: white;
+position: fixed;
+top: 0;
+width: 100%;
+font-size: 15px;
+padding-top: 25px;
+}
+ 
+#logo {
+margin-right: auto;
+height: 25px;
+width: 154px;
+padding-left: 10px;
+} 
+
+.navi:hover {
+border-bottom: 2px solid white;
+}
+
+.navi a {
+text-decoration: none; 
+color: white;
+font-weight: 500;   
+padding: 20px;
+}
+
+/* main */
+
+h1 {
+text-align: center;  
+padding: 20px;  
+padding-bottom: 50px;
+}
+
+.card {
+position: relative; 
+display: flex;
+justify-content: center;
+height: 28rem;
+gap: 60px;
+}
+
+.center {
+background-color: rgba(250, 235, 216, 0.977);
+}
+
+.card img {
+height: 450px;
+}
+
+.overlayimage {
+position: absolute;
+top: 0;
+width: auto;
+}
+
+.cardimage img {
+transition: all 0.3s ease-out;
+}
+
+.cardimage:hover img {
+transform: scale(0); 
+}
+
+.one img {
+transform-origin: left bottom;
+}  
+
+.two img {
+transform-origin: center bottom;
+}  
+
+.three img {
+transform-origin: right bottom;
+}  
+
+.totaltitle {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 10px;
+width: auto;
+}
+
+.totaltitle span {
+font-weight: bold;
+font-size: 18px;
+}
+
+.title {
+transition:all .3s ease-out;
+display: inline-block;
+}
+
+.I {
+padding-left: 100px;  
+}
+
+.II {
+padding: 20px;  
+}
+
+.III {
+padding-right: 100px; 
+}
+
+/* .center:has(.card .cardimage:nth-child(1):hover)
+.totaltitle > div:nth-child(1) .title {
+transform: translateY(-500px);
+}
+
+.center:has(.card .cardimage:nth-child(2):hover)
+.totaltitle > div:nth-child(2) .title {
+transform: translateY(-500px);
+}
+
+.center:has(.card .cardimage:nth-child(3):hover)
+.totaltitle > div:nth-child(3) .title {
+transform: translateY(-500px);
+} */
+
+.cardimage:hover .I {
+transform: translateY(-500px);    
+}
+.cardimage:hover .II {
+transform: translateY(-500px);    
+}
+.cardimage:hover .III {
+transform: translateY(-500px);    
+}
+
+.hovertext {
+width: 220px;
+line-height: 2;
+opacity: 0;
+transition: opacity 0.3s ease-in;
+}
+
+.onee {
+margin-left: 10px;
+}
+
+.threee {
+margin-left: 20px;
+}
+
+.cardimage:hover .hovertext {
+opacity: 1;
+}
+
+.terms {
+text-align: center;  
+position: fixed;
+bottom: 40px;
+right: 20px;
+color: rgb(54, 51, 51);
+font-size: 0.8em;
+} 
